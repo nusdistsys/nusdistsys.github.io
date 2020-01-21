@@ -1,6 +1,16 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "6.824 DYOM"
 [menu]
-[[menu.main]]
-  
+
+  [[menu.main]]
+    identifier = "Labs"
+    name = "Labs"
+    url = "/labs/"
+    weight = -110
+
+  [[menu.main]]
+    identifier = "Notes"
+    name = "Notes"
+    url = "/notes/"
+    weight = -100

@@ -1,8 +1,12 @@
 {{ define "main" }}
 <main aria-role="main">
-  {{ range $section := .Site.Sections }}
-  <span class="text-2xl text-indigo-800 clickable-text">{{ $section.Title }}</span>
-  {{ range $section.Pages }}
+  <h1>{{ .Title }}</h1>
+  <div class="block my-8">
+    {{ .Content }}
+  </div>
+  {{ range .Site.Sections }}
+  <span class="text-2xl text-indigo-800 clickable-text">{{ .Title }}</span>
+  {{ range .Pages }}
   <article>
     {{ partial "heading_homepage.html" . }}
   </article>

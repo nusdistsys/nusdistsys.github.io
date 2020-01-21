@@ -28,3 +28,7 @@ h3 {
 .clickable-title:hover {
     @apply text-indigo-600;
 }
+
+a {
+    @apply text-teal-600;
+}
