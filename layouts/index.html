@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main aria-role="main">
+  {{ range $section := .Site.Sections }}
+  <span class="text-2xl text-indigo-800 clickable-text">{{ $section.Title }}</span>
+  {{ range $section.Pages }}
+  <article>
+    {{ partial "heading_homepage.html" . }}
+  </article>
+  {{ with site.Params.divider }}<div class="Divider"></div>{{ end }}
+  {{ end }}
+  {{ end }}
+</main>
+{{ end }}

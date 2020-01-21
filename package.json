@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss-nested": "^4.2.1",
+    "tailwindcss": "^1.1.4"
+  }
+}

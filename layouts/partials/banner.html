@@ -1,0 +1,16 @@
+<nav>
+  <div>
+    <div class="w-full fixed bg-teal-700 p-4">
+      <ul>
+        <li>
+          <a class="font-medium text-xl text-white" href="{{ "" | absURL }}">{{ site.Title }}</a>
+        </li>
+        {{ range site.Menus.nav }}
+        <li>
+          <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>
