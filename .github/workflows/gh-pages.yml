@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - master
+      - source
 
 jobs:
   build-deploy:
@@ -33,4 +33,3 @@ jobs:
         env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           PUBLISH_BRANCH: master
-          PUBLISH_DIR: ./public
