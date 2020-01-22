@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://nusdistsys.github.io/site/"
 languageCode = "en-us"
 title = "6.824 DYOM"
 [menu]

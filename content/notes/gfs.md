@@ -33,7 +33,7 @@ draft: false
 ![definitions](https://i.imgur.com/MCJQPkq.png)
 
 ## How it works
-- The paper discusses this better than I ever can
+- The paper discusses this pretty well and in-depth.
 
 ## Other interesting properties/mechanisms
 ### Namespace management and locking
