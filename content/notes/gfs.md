@@ -11,7 +11,8 @@ draft: false
 3. Support for large streaming reads as well as small random reads
 4. Large appends the common use case (to be optimised for this)
 5. Atomicity for concurrent appends, with minimal synchronisation overhead
-6. High bandwidth over low latency
+6. High bandwidth over low latency - what does this mean?
+   - You care about getting more data over vs low latency?
 
 ## Architecture
 ![GFS architecture](https://2.bp.blogspot.com/-C7Qcn2akF7E/U0zVjII34hI/AAAAAAAAAQY/7Cvy2OX9m9s/w1200-h630-p-k-no-nu/GFS+architecture.JPG)
@@ -55,3 +56,11 @@ draft: false
 - Computed on each chunkserver - why?
 - "Corruption" - referring to data being corrupted locally due to
   equipment failure, as opposed to transport corruption.
+
+## QUestions:
+### Hadoop:
+#### What does it run on? HDFS vs GFS?
+- GFS is an earlier version of HDFS
+
+### How about the checksum operation and I/O? what does this mean?
+- What happens if send IO before checksum is completed
