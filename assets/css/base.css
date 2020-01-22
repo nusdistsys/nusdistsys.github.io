@@ -32,3 +32,15 @@ h3 {
 a {
     @apply text-teal-600;
 }
+
+article > p, ul, ol {
+    @apply text-lg tracking-wide;
+}
+
+article > p, ul, ol, pre:not(:last-child) {
+    @apply mb-6;
+}
+
+article > ol, ul {
+    @apply list-disc ml-8;
+}
