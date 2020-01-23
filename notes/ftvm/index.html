@@ -1,0 +1,28 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Fault-Tolerant Virtual Machines | 6.824 DYOM</title><link rel=canonical href=https://nusdistsys.github.io/notes/ftvm/><link rel=stylesheet href=https://nusdistsys.github.io/css/base.css integrity crossorigin=anonymous></head><body><nav><div class="px-2 bg-teal-700 fixed w-full"><ul class="flex h-full list-none m-0"><li class=p-4><a class="inline font-medium text-xl text-white" href=https://nusdistsys.github.io/>6.824 DYOM</a></li><li class="flex hover:bg-teal-800 h-full content-center p-4"><a class="inline font-light text-xl text-white" href=https://nusdistsys.github.io/labs/>Labs</a></li><li class="flex hover:bg-teal-800 h-full content-center p-4"><a class="inline font-light text-xl text-white" href=https://nusdistsys.github.io/notes/>Notes</a></li></ul></div></div></nav><main><div class="container max-w-2xl mx-auto pt-20"><article><header><span class="block py-8"><h1><a class=font-sans href=https://nusdistsys.github.io/notes/ftvm/ rel=bookmark>Fault-Tolerant Virtual Machines</a></h1><time datetime=2020-01-23T16:23:37+08:00>23 January, 2020</time></span></header><h1 id=why-use-vms>Why use VMs?</h1><p>Insert some answer here</p><ul><li>What does it mean to have difficulties in ensuring deterministic
+execution of physical server (esp as frequencies increase?)</li></ul><h1 id=deterministic-replay-implementation>Deterministic Replay implementation</h1><ul><li>Non-deterministic events, non-deterministic operations (virtual
+interrupts, clock cycle counters respectively)<ul><li>Events - remember which instruction at which they occur at</li><li>Operations: &ldquo;sufficient information&rdquo; is kept about them - such
+as? remember what they're undefined for and checking for that
+condition? (same &ldquo;state change&rdquo; and output guaranteed)</li></ul></li></ul><h1 id=protocol>Protocol:</h1><ul><li>Entries are not written to disk, instead they are sent on a
+logging channel and played on the backup disk in real time.</li><li>Output rule ensures that backup is consistent with other outputs
+by the primary server</li><li>Compensation for lost packets (network failures?)</li></ul><h1 id=fault-tolerancedetection-of-failures--recovery-mechanisms>Fault-tolerance/detection of failures & recovery mechanisms</h1><ul><li>VMWare FT automatically detects when the backup VM is now the
+primary VM, and broadcasts the IP of the new Primary VM so that
+clients may know who the right person to contact is now.</li><li>Atomic test-and-set operation on a shared disk? Incrementing
+number for test and set?</li><li>Need for backup VM to execute at roughly the same pace<ul><li>Reduce unexpected pauses caused by buffer full</li><li>reduce execution lag time in order to reduce the failover time</li><li>Solutions: feedback loop (by measuring execution time lags), and
+using that to feedback to Primary VM to slow down/speed up
+execution when needed</li></ul></li></ul><h1 id=implementation-difficulties>Implementation difficulties</h1><h2 id=disk-io>Disk IO:</h2><ul><li>Nondeterminism in asynchronous disk reads/writes. <strong>Solution:</strong> VM
+intercepts kernel calls and ensure that they are performed
+synchronously (or sequentially)</li><li>Nondeterminism in disk/memory access. <strong>Solution:</strong> &ldquo;bounce
+buffers&rdquo;: Disk reads are first read into buffer then forwarded to
+replay as I/O processes on backup VM. Likewise, writes are first
+buffered before performed, then passed to backup VM to replay.</li><li>VM Failure before finding out if I/O completion
+notice. <strong>Solution:</strong> Reissue command on restart of VM. Because of
+the previous guards, it should be the case that this still
+results in a sequential, idempotent history.</li></ul><h2 id=network-io>Network IO:</h2><ol><li>Asynchronous network calls were somehow eliminated in the
+hypervisor??</li><li>Interrupts are batched by clustering them for a bunch of packets
+(???) - reduces VM traps and interrupts</li><li>log entries and acknowledgements handled by VMWare hypervisor,
+such that no thread context switches are not required</li></ol><h1 id=alternatives-to-implementations>Alternatives to implementations:</h1><h2 id=non-shared-disks>Non-shared disks</h2><ol><li>This implies that the disk is no longer an externally observable
+output, and hence no longer required to meet the Output
+Requirement - disk writes need not be synchronised as Output
+Rule need not be met.</li><li>Resync of disk content in this context needed</li><li>Non-shared disk config: split-brain problem cannot be solved due
+to lack of atomic test-and-set to be performed - 3rd party
+server needed to break ties.</li></ol><h2 id=disk-reads-done-on-the-backup-vm>Disk reads done on the Backup VM</h2><ol><li>Reduces traffic on logging channel</li><li>Increases execution lag as Disk I/O needs to be performed on the backup disk</li></ol></article></div></main></body></html>
