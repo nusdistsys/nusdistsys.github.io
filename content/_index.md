@@ -15,3 +15,9 @@ This website serves as a store for our discussion notes and/or questions that ar
 Our next session would be held on Tuesday 1-2 p.m., venue TBC.
 
 This is a discussion session with Prof Seth, so please come prepared :)
+
+### Contributing
+
+Check out [the source
+branch](https://github.com/nusdistsys/nusdistsys.github.io/tree/source)
+for how you can contribute your notes to this repo :D
