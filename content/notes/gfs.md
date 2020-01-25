@@ -57,7 +57,22 @@ draft: false
 - "Corruption" - referring to data being corrupted locally due to
   equipment failure, as opposed to transport corruption.
 
-## QUestions:
+### Snapshotting
+- Goal: minimize interruptions of ongoing data. 
+- Copy on write technique
+
+1. When the master receives a snapshot
+request, it first revokes any outstanding leases on the chunks
+in the files it is about to snapshot. 
+2. It duplicates the metadata
+for the source file or directory tree.
+3. The master notices that the
+reference count for chunk C is greater than one. It defers
+replying to the client request and instead picks a new chunk handle C’. It then asks each chunkserver that has a current
+replica of C to create a new chunk called C’.
+(Local copy decreases overhead)
+
+## Questions:
 ### Hadoop:
 #### What does it run on? HDFS vs GFS?
 - GFS is an earlier version of HDFS

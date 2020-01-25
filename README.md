@@ -4,8 +4,12 @@
 If you'd like to run a server to preview your notes, you'll have
 to install [Hugo](https://gohugo.io).
 
+Run `yarn` in root directory to install the packages needed to generate the css.
+
 Otherwise, just updating the md for your notes and adding the
 appropriate Hugo headers should be sufficient.
+
+
 
 ## Contribute notes!
 ### With Hugo
