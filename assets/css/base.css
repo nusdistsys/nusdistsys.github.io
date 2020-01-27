@@ -44,3 +44,8 @@ article > p, ul, ol, pre:not(:last-child) {
 article > ol, ul {
     @apply list-disc ml-8;
 }
+
+td {
+    @apply px-4;
+    @apply py-2;
+}
