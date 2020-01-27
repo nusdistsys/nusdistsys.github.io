@@ -8391,6 +8391,11 @@ td {
   padding-bottom: 0.5rem;
 }
 
+.dropdown {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
