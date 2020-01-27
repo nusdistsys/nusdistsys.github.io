@@ -24,8 +24,8 @@ for how you can contribute your notes to this repo :D
 
 ### Schedule
 
-<details class="py-2">
-<summary class="text-xl font-medium">Week 1 (13-19 Jan)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 1 (13-19 Jan)</summary>
 
 **LEC 1:** [Introduction](https://pdos.csail.mit.edu/6.824/notes/l01.txt)
 
@@ -39,9 +39,9 @@ for how you can contribute your notes to this repo :D
 **Preparation:** Do [Online Go tutorial](http://tour.golang.org/) ([FAQ](https://pdos.csail.mit.edu/6.824/papers/tour-faq.txt)) ([Question](https://pdos.csail.mit.edu/6.824/questions.html?q=q-gointro&lec=2))
 
 </details>
-<details class="py-2">
+<details class="pt-2">
 
-<summary class="text-xl font-medium">Week 2 (20-26 Jan)</summary>
+<summary class="dropdown">Week 2 (20-26 Jan)</summary>
 
 **LEC 3:** [GFS](https://pdos.csail.mit.edu/6.824/notes/l-gfs-short.txt)
 
@@ -50,8 +50,8 @@ for how you can contribute your notes to this repo :D
 **Assigned:** [Lab 2: Raft](https://pdos.csail.mit.edu/6.824/labs/lab-raft.html)
 
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 3 (27 Jan - 2 Feb)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 3 (27 Jan - 2 Feb)</summary>
 
 **Teach Seth:**
 
@@ -74,8 +74,8 @@ Shaowei
 **Preparation:** Read [Fault-Tolerant Virtual Machines (2010)](https://pdos.csail.mit.edu/6.824/papers/vm-ft.pdf) ([FAQ](https://pdos.csail.mit.edu/6.824/papers/vm-ft-faq.txt)) ([Question](https://pdos.csail.mit.edu/6.824/questions.html?q=q-vm-ft&lec=4))
 
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 4 (3-9 Feb)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 4 (3-9 Feb)</summary>
 
 **LEC 5:** [Fault Tolerance: Raft](https://pdos.csail.mit.edu/6.824/notes/l-raft.txt)
 
@@ -97,8 +97,8 @@ Jiaxiu
 
 <Person Two>
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 5 (10-16 Feb)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 5 (10-16 Feb)</summary>
 
 **LEC 6:** [Fault Tolerance: Raft](https://pdos.csail.mit.edu/6.824/notes/l-raft2.txt)
 
@@ -110,8 +110,8 @@ Jiaxiu
 **Preparation:** Read [Spinnaker (2011)](https://pdos.csail.mit.edu/6.824/papers/spinnaker.pdf) (including Appendices) ([FAQ](https://pdos.csail.mit.edu/6.824/papers/spinnaker-faq.txt)) ([Question](https://pdos.csail.mit.edu/6.824/questions.html?q=q-spinnaker&lec=7))
 
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 6(17-23 Feb)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 6(17-23 Feb)</summary>
 
 **LEC 8:** [Zookeeper](https://pdos.csail.mit.edu/6.824/notes/l-zookeeper.txt)
 
@@ -137,8 +137,8 @@ Guo Wei
 <Person Two>
 
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 7 (2-8 Mar)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 7 (2-8 Mar)</summary>
 
 **LEC 10:** [Distributed Transactions](https://pdos.csail.mit.edu/6.824/notes/l-2pc.txt)
 
@@ -149,8 +149,8 @@ Guo Wei
 **Preparation:** Read [FaRM (2015)](https://pdos.csail.mit.edu/6.824/papers/farm-2015.pdf) ([FAQ](https://pdos.csail.mit.edu/6.824/papers/farm-faq.txt)) ([Question](https://pdos.csail.mit.edu/6.824/questions.html?q=q-farm&lec=11))
 
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 8 (9-15 Mar)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 8 (9-15 Mar)</summary>
 
 **LEC 12:** [Big Data: Spark](https://pdos.csail.mit.edu/6.824/notes/l-spark.txt)
 
@@ -176,8 +176,8 @@ Adam
 
 <Person Two>
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 9 (16-22 Mar)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 9 (16-22 Mar)</summary>
 
 **LEC 13:** [Big Data: Naiad](https://pdos.csail.mit.edu/6.824/notes/l-naiad.txt)
 
@@ -188,8 +188,8 @@ Adam
 **Preparation:** Read [Parameter Server (2014)](https://pdos.csail.mit.edu/6.824/papers/parameter.pdf) ([FAQ](https://pdos.csail.mit.edu/6.824/papers/parameter-faq.txt)) ([Question](https://pdos.csail.mit.edu/6.824/questions.html?q=q-parameter&lec=14))
 
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 10 (23-29 Apr)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 10 (23-29 Apr)</summary>
 
 **LEC 15:** [Cache Consistency: Frangipani](https://pdos.csail.mit.edu/6.824/notes/l-frangipani.txt)
 
@@ -214,8 +214,8 @@ Adam
 <Person Two>
 
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 11 (30 Mar - 5 Apr)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 11 (30 Mar - 5 Apr)</summary>
 
 **LEC 16:** [Cache Consistency: Memcached at Facebook](https://pdos.csail.mit.edu/6.824/notes/l-memcached.txt)
 
@@ -228,8 +228,8 @@ Adam
 **Preparation:** Read [AnalogicFS experience paper](https://pdos.csail.mit.edu/6.824/papers/katabi-analogicfs.pdf) ([FAQ](https://pdos.csail.mit.edu/6.824/papers/analogicfs-faq.txt)) ([Question](https://pdos.csail.mit.edu/6.824/questions.html?q=q-analogic&lec=22))
 
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 12 (6-12 Apr)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 12 (6-12 Apr)</summary>
 
 **LEC 20:** [Dynamo](https://pdos.csail.mit.edu/6.824/notes/l-dynamo.txt)
 
@@ -239,10 +239,10 @@ Adam
 
 **Preparation:** Read [Bitcoin](https://pdos.csail.mit.edu/6.824/papers/bitcoin.pdf), [summary](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works) ([FAQ](https://pdos.csail.mit.edu/6.824/papers/bitcoin-faq.txt)) ([Question](https://pdos.csail.mit.edu/6.824/questions.html?q=q-bitcoin&lec=21))
 </details>
-<details class="py-2">
-<summary class="text-xl font-medium">Week 13 (13-19 Apr)</summary>
+<details class="pt-2">
+<summary class="dropdown">Week 13 (13-19 Apr)</summary>
 
-No class.
+No details.
 
 </details>
 

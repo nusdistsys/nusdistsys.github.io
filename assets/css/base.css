@@ -49,3 +49,8 @@ td {
     @apply px-4;
     @apply py-2;
 }
+
+.dropdown {
+    @apply font-medium;
+    @apply mb-2;
+}
