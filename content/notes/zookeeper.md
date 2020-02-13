@@ -1,5 +1,8 @@
-# Zookeeper
-
+---
+title: "Zookeeper"
+date: 2020-02-13T16:04:06+08:00
+draft: false
+---
 ## Leader Elections
 
 Leader is needed to order client requests into a transaction. 
@@ -20,7 +23,7 @@ Server changes vote if it receives a vote that has a higher zxid and a higher se
 
 ZAB does a two phase commit
 
-![two phase](https://pasteboard.co/IUk3pIT.png)
+![two phase](https://user-images.githubusercontent.com/28092058/74420774-f159cd80-4e86-11ea-9db7-bc3d353d1a9f.png)
 
 1. The leader sends a PROPOSAL message, p, to all followers.
 2. Upon receiving p, a follower responds to the leader with an ACK, informing the
