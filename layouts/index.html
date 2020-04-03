@@ -4,14 +4,5 @@
   <div class="block my-8">
     {{ .Content }}
   </div>
-  {{ range .Site.Sections }}
-  <span class="text-2xl text-indigo-800 clickable-text">{{ .Title }}</span>
-  {{ range .Pages }}
-  <article>
-    {{ partial "heading_homepage.html" . }}
-  </article>
-  {{ with site.Params.divider }}<div class="Divider"></div>{{ end }}
-  {{ end }}
-  {{ end }}
 </main>
 {{ end }}
