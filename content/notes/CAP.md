@@ -1,10 +1,11 @@
 ---
 title: "CAP"
 date: 2020-04-02T15:22:02+08:00
-draft: true
+draft: false
 ---
 
-Tip: Usually analysed in the context of a master with its replicas. Consider reads and writes sent to the replicas.
+Tip: Usually analysed in the context of a master with its
+replicas. Consider reads and writes sent to the replicas.
 
 ## Theorem
 
@@ -23,7 +24,8 @@ Every read returns the most recent right, or an error.
 
 ### Availability
 
-Every requests receives a non-error response, without the guarantee that it contains the most recent write.
+Every requests receives a non-error response, without the guarantee
+that it contains the most recent write.
 
 ### Partition Tolerance
 
