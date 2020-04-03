@@ -4,7 +4,7 @@ date: 2020-04-02T15:22:02+08:00
 draft: true
 ---
 
-Tip: Usually analysed in the context of a 
+Tip: Usually analysed in the context of a master with its replicas. Consider reads and writes sent to the replicas.
 
 ## Theorem
 
