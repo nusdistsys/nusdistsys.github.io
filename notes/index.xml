@@ -4,7 +4,11 @@ The techniques focus on allowing high system utilization without wasteful overpr
 Sources of variability Shared resources
 Daemons
 Global Resource Sharing
-Maintenence</description></item><item><title>Spark</title><link>https://nusdistsys.github.io/notes/spark/</link><pubDate>Fri, 03 Apr 2020 10:39:06 +0800</pubDate><guid>https://nusdistsys.github.io/notes/spark/</guid><description>Spark Motivation Resilient Distributed Databases is a distributed memory abstraction that programmers use to do in-memory computation in a fault-tolerant manner.
+Maintenence</description></item><item><title>Atomic</title><link>https://nusdistsys.github.io/notes/atomic/</link><pubDate>Tue, 14 Apr 2020 12:18:54 +0800</pubDate><guid>https://nusdistsys.github.io/notes/atomic/</guid><description>Atomic Goal: define atomicity and describe strategies on how it can be achieved Property required in several different areas of computer system design.
+There are two main kinds of atomicity, but different sources of literature might define these things differently.
+All-or-nothing is regarded as the default definition of atomicity.
+Before-or-after is sometimes regarded as Isolation.
+There remain some important gaps in our exploration of atomicity. First, in a layered system, a transaction implemented in one layer may consist of a series of component actions of a lower layer that are themselves atomic.</description></item><item><title>Spark</title><link>https://nusdistsys.github.io/notes/spark/</link><pubDate>Fri, 03 Apr 2020 10:39:06 +0800</pubDate><guid>https://nusdistsys.github.io/notes/spark/</guid><description>Spark Motivation Resilient Distributed Databases is a distributed memory abstraction that programmers use to do in-memory computation in a fault-tolerant manner.
 Motivated by iterative algorithms and interactive data-mining tools. (These algorithms require intermediate results). RDDs provide restricted form of shared memory.
 How does it solve the problem RDDs provide a coarse-grained transformation. The system logs these transformations instead to build the dataset instead of saving the actual data.
 This allows recovered of a partition without using replication.</description></item><item><title>CAP</title><link>https://nusdistsys.github.io/notes/cap/</link><pubDate>Thu, 02 Apr 2020 15:22:02 +0800</pubDate><guid>https://nusdistsys.github.io/notes/cap/</guid><description>Tip: Usually analysed in the context of a master with its replicas. Consider reads and writes sent to the replicas.
