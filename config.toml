@@ -14,6 +14,12 @@ title = "6.824 DYOM"
     name = "Notes"
     url = "/notes/"
     weight = -100
+  
+  [[menu.main]]
+    identifier = "Summer"
+    name = "Summer"
+    url = "/summer/"
+    weight = -100
 
 [markup.goldmark.renderer]
 unsafe= true
