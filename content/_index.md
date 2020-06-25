@@ -19,6 +19,9 @@ Check out [the source
 branch](https://github.com/nusdistsys/nusdistsys.github.io/tree/source)
 for how you can contribute your notes to this repo :D
 
+We would like to thank the following people for taking the time out of their busy schedule to share their knowledge with us:
+- [Mark Teehan](https://www.linkedin.com/in/mark-teehan-0940691/) from [Confluent](https://www.confluent.io/blog)
+
 ### Schedule
 
 <details class="pt-2">
